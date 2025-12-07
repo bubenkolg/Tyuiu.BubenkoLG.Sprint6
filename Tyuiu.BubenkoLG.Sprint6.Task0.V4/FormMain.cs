@@ -34,10 +34,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task0.V4
                 e.Handled = true;
             }
         }
-        private void buttonHelp_BLG_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Таск 0 выполнил студент группы СМАРТб-25-1 Бубенко Людмила Георгиевна", "Сообщение");
-        }
+        
         private void button2_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
@@ -52,11 +49,23 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task0.V4
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+            DataService ds = new DataService();
+            try
+            {
+                textBoxResult_BLG.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_BLG.Text)));
+            }
+            catch
+            {
+                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void textBoxVarX_BLG_TextChanged(object sender, EventArgs e)
         {
             
+        }
+        private void buttonHelp_BLG_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 0 выполнил студент группы СМАРТб-25-1 Бубенко Людмила Георгиевна", "Сообщение");
         }
     }
 }

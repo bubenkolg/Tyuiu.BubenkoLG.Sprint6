@@ -147,6 +147,7 @@
             buttonHelp_BLG.TabIndex = 3;
             buttonHelp_BLG.Text = "?";
             buttonHelp_BLG.UseVisualStyleBackColor = true;
+            buttonHelp_BLG.Click += buttonHelp_BLG_Click;
             // 
             // buttonDone_BLG
             // 
