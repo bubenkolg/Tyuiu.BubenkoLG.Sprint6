@@ -14,7 +14,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task1.V3.Test
             int startValue = -5;
             int stopValue = 5;
             double[] res = ds.GetMassFunction(startValue, stopValue);
-            double[] wait = { 19.81, 16.79, 13.87, 10.98, 7.94, 3.0, 3.23, -0.45, -3.79, -6.97, 0 };
+            double[] wait = { 19.81, 16.79, 13.87, 10.98, 7.94, 3.0, 3.23, -0.45, -3.79, -6.97, -10.0 };
             for (int i = 0; i < res.Length; i++)
             {
                 Assert.AreEqual(res[i], wait[i]);

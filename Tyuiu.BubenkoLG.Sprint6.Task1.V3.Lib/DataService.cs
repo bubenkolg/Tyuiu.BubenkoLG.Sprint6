@@ -15,7 +15,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task1.V3.Lib
         {
             double[] result = new double[11];
             int i = 0;
-            while (startValue != stopValue)
+            while (startValue != stopValue+1)
             {
                 if (2*startValue-0.5 == 0)
                 {
