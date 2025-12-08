@@ -21,6 +21,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task1.V3
                 int stopValue = Convert.ToInt32(textBoxStopValue_BLG.Text);
 
                 string strLine;
+                int x = 0;
 
                 int len = ds.GetMassFunction(startValue, stopValue).Length;
                 double[] valueArray;
