@@ -23,7 +23,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task4.V29.Lib
                 }
                 else
                 {
-                    result[i] = Math.Round(((2*startValue-3)/(Math.Cos(startValue))-2*startValue)+5*startValue-6, 2);
+                    result[i] = Math.Round((2*startValue-3)/(Math.Cos(startValue)-2*startValue)+5*startValue-6, 2);
                 }
                 i++;
                 startValue++;
