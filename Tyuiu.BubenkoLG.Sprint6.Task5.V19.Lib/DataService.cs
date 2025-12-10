@@ -29,11 +29,13 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task5.V19.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    numsArray[index] = Convert.ToDouble(line);
+                    if (line.Contains('.') == false)
+                    {
+                        numsArray[index] = Convert.ToDouble(line);
+                    }
                     index++;
                 }
             }
-            numsArray = numsArray.Where(x => Convert.ToString(x).Contains('.') == true).ToArray();
             return numsArray;
         }
     }
