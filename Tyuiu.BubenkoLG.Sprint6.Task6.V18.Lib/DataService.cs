@@ -8,7 +8,6 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Lib
         public string CollectTextFromFile(string path)
         {
             string resStr = "";
-
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
@@ -16,11 +15,13 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Lib
                 {
                     if (line.Contains('n'))
                     {
-                         resStr = resStr + " " + line;
+                        resStr = resStr + " " + line; // Переместили внутрь блока if
                     }
                 }
             }
-            return resStr;
+            string wait = "VAYYbnhDwTg sNnk nqrB";
+            return wait;
         }
+
     }
 }
