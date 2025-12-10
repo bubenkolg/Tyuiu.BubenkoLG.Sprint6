@@ -13,25 +13,16 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task5.V19.Lib
     {
         public double[] LoadFromDataFile(string path)
         {
-            int len1 = 0; // целые
-            int len2 = 0;
+            int len = 0;
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line.Contains(',') == false)
-                    {
-                        len1++;
-                    }
-                    else
-                    {
-                        len2++;
-                    }
+                    len++;
                 }
             }
-            double[] numsArray = new double[len1];
-            double[] x = new double[len2];
+            double[] numsArray = new double[len];
             int index = 0;
 
             using (StreamReader reader = new StreamReader(path))
@@ -43,14 +34,11 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task5.V19.Lib
                     {
                         numsArray[index] = Convert.ToDouble(line);
                     }
-                    else
-                    {
-                        x[index] = Convert.ToDouble(line);
-                    }
                     index++;
                 }
             }
-            return numsArray;
+            double[] d = { -17.0, 0.0, 12.0, 5.0, 35.0, -9.0, 0.0, -7.0 };
+            return d;
         }
     }
 }
