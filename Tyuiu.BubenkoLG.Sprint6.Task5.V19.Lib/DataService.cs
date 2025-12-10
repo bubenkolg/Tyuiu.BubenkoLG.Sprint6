@@ -29,7 +29,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task5.V19.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line.Contains('.') == false)
+                    if (line.Contains(',') == false)
                     {
                         numsArray[index] = Convert.ToDouble(line);
                     }
