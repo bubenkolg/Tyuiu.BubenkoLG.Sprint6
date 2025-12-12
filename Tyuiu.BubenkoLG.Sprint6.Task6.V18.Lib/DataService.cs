@@ -15,12 +15,11 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Lib
                 {
                     if (line.Contains('n'))
                     {
-                        resStr = resStr + " " + line; // Переместили внутрь блока if
+                        resStr = resStr + " " + line;
                     }
                 }
             }
-            string wait = "VAYYbnhDwTg sNnk nqrB";
-            return wait;
+            return resStr;
         }
 
     }
