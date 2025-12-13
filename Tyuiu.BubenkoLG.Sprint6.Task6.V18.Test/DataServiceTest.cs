@@ -17,6 +17,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Test
             bool wait = true;
             Assert.AreEqual(wait, fileExists);
         }
+        [TestMethod]
         public void ValidCollectTextFromFile()
         {
             DataService ds = new DataService();
