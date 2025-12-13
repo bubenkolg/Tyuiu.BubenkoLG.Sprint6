@@ -20,7 +20,6 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Test
         public void ValidCollectTextFromFile()
         {
             DataService ds = new DataService();
-
             string text = "gMxrJi NEzHYMM cHshl VAYYbnhDwTg cqqToIKFd OmduE fGf m DdvgjSJAlQx OJQBG etujsEyNxkCsy bBYQQ TUczey NtFbXoZ sNnk pmYGtO CMmHkUlnNoZen rvzAEwiXzIsLRa WqU xakZKciG nqrB";
             string wait = "VAYYbnhDwTg sNnk nqrB";
             string res = ds.CollectTextFromFile(path);

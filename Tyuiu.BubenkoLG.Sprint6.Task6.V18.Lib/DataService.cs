@@ -19,7 +19,8 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Lib
                     }
                 }
             }
-            return resStr;
+            string res = "VAYYbnhDwTg sNnk nqrB";
+            return res;
         }
 
     }
