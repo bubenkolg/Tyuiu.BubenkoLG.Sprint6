@@ -100,8 +100,8 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task7.V6
 
             for (int i = 0; i < colums; i++)
             {
-                dataGridViewInputData_BLG.Columns[i].Width = 25;
-                dataGridViewOutputData_BLG.Columns[i].Width = 25;
+                dataGridViewInputData_BLG.Columns[i].Width = 55;
+                dataGridViewOutputData_BLG.Columns[i].Width = 55;
             }
             for (int i = 0; i < rows; i++)
             {

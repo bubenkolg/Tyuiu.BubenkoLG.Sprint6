@@ -79,6 +79,7 @@
             // 
             // buttonSaveFile_BLG
             // 
+            buttonSaveFile_BLG.Enabled = false;
             buttonSaveFile_BLG.Image = (Image)resources.GetObject("buttonSaveFile_BLG.Image");
             buttonSaveFile_BLG.Location = new Point(400, 12);
             buttonSaveFile_BLG.Name = "buttonSaveFile_BLG";
@@ -87,11 +88,13 @@
             buttonSaveFile_BLG.TabIndex = 4;
             toolTipButtonSaveFile_BLG.SetToolTip(buttonSaveFile_BLG, "Сохранить обработанные данные в новый файл");
             buttonSaveFile_BLG.UseVisualStyleBackColor = true;
+            buttonSaveFile_BLG.EnabledChanged += buttomSaveFile_BLG_Click;
             buttonSaveFile_BLG.Click += buttomSaveFile_BLG_Click;
             buttonSaveFile_BLG.MouseEnter += buttonSaveFile_BLG_MouseEnter;
             // 
             // buttonComplete_BLG
             // 
+            buttonComplete_BLG.Enabled = false;
             buttonComplete_BLG.Image = (Image)resources.GetObject("buttonComplete_BLG.Image");
             buttonComplete_BLG.Location = new Point(206, 12);
             buttonComplete_BLG.Name = "buttonComplete_BLG";
@@ -100,6 +103,7 @@
             buttonComplete_BLG.TabIndex = 3;
             toolTipButtonComplete_BLG.SetToolTip(buttonComplete_BLG, "Кнопка активирующая обработку файла");
             buttonComplete_BLG.UseVisualStyleBackColor = true;
+            buttonComplete_BLG.EnabledChanged += buttonComplete_BLG_Click;
             buttonComplete_BLG.Click += buttonComplete_BLG_Click;
             buttonComplete_BLG.MouseEnter += buttonComplete_BLG_MouseEnter;
             // 
@@ -113,6 +117,7 @@
             buttonOpenFile_BLG.TabIndex = 2;
             toolTipButtonOpenFile_BLG.SetToolTip(buttonOpenFile_BLG, "Выберите файл для обработки");
             buttonOpenFile_BLG.UseVisualStyleBackColor = true;
+            buttonOpenFile_BLG.EnabledChanged += buttonOpenFile_BLG_Click;
             buttonOpenFile_BLG.Click += buttonOpenFile_BLG_Click;
             buttonOpenFile_BLG.MouseEnter += buttonOpenFile_BLG_MouseEnter;
             // 

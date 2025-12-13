@@ -7,19 +7,20 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Test
     [TestClass]
     public sealed class DataServiceTest
     {
-        DataService ds = new DataService();
         string path = @"C:\Users\Людмила Георгиевна\Desktop\source\repos\Tyuiu.BubenkoLG.Sprint6\InPutDataFileTask6V18.txt";
 
         [TestMethod]
-        /*public void CheckedExistsFile()
+        public void CheckedExistsFile()
         {
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
             Assert.AreEqual(wait, fileExists);
-        }*/
+        }
         public void ValidCollectTextFromFile()
         {
+            DataService ds = new DataService();
+
             string text = "gMxrJi NEzHYMM cHshl VAYYbnhDwTg cqqToIKFd OmduE fGf m DdvgjSJAlQx OJQBG etujsEyNxkCsy bBYQQ TUczey NtFbXoZ sNnk pmYGtO CMmHkUlnNoZen rvzAEwiXzIsLRa WqU xakZKciG nqrB";
             string wait = "VAYYbnhDwTg sNnk nqrB";
             string res = ds.CollectTextFromFile(path);
