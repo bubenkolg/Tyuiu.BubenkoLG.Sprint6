@@ -13,14 +13,21 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line.Contains('n'))
+                    if (line.Contains("n"))
                     {
-                        resStr = resStr + " " + line;
+                        string[] words = line.Split(' ');
+
+                        foreach (string word in words)
+                        {
+                            if (word.Contains("n"))
+                            {
+                                resStr = resStr + " " + word;
+                            }
+                        }
                     }
                 }
             }
-            string res = "VAYYbnhDwTg sNnk nqrB";
-            return res;
+            return resStr.TrimStart();
         }
 
     }
