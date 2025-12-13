@@ -27,6 +27,7 @@ namespace Tyuiu.BubenkoLG.Sprint6.Task6.V18.Lib
                     }
                 }
             }
+
             return resStr.TrimStart();
         }
 

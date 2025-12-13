@@ -236,8 +236,9 @@
             // 
             splitterInputOutput_BLG.Location = new Point(0, 10);
             splitterInputOutput_BLG.Margin = new Padding(10);
+            splitterInputOutput_BLG.MinSize = 50;
             splitterInputOutput_BLG.Name = "splitterInputOutput_BLG";
-            splitterInputOutput_BLG.Size = new Size(6, 614);
+            splitterInputOutput_BLG.Size = new Size(10, 614);
             splitterInputOutput_BLG.TabIndex = 2;
             splitterInputOutput_BLG.TabStop = false;
             // 
